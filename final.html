@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Interactive Prototyping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    
+    <div class="w3-panel w3-pink w3-animate-top">
+        <a href="index.html"> <button class="btn success w3-margin-top w3-medium" >back</button></a>
+        <h1 class="w3-opacity">Final - Project 4 - Music and Mantra</h1>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 1: Idea </h2>
+      </div>
+      
+      <div class=" w3-margin w3-animate-right">
+        <p>The final project's primary purpose was to use the learning acquired across the term to 
+            create a new project or expand on a previous one. My idea was to expand on the third project and  
+            conduct an experiment on a topic that I wanted to explore. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> It is said that a few compositions in Indian Classical Carnatic music has the same metric and tempo 
+            structure has the Vedic chats and mantras. Though these seem to be unrelated fields, the Indian 
+            tradition states that the structures used in both are at times similar. The idea was to create a 
+            visual method to check the similarity in tempo structures between the mantra chantings and the 
+            compositions that are claimed to use those. The idea is to created a way to test this claim.  </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 2: Interaction diagram</h2>
+      </div>
+     
+      <img src="data/ID4.png" class=" w3-padding w3-animate-right" alt="Alps">
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 3: Arduino Setup</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> The same MKR 1010 setup was used as the previous project.
+            On a sketch_js file the code was being written on.
+            Hence it did not take much adjusting to the perviously established project. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 4: Design Idea</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> As the structures of both these system were being used, the design should be able to capture the 
+            overall picture - the growth and the fall along with the pressure that it takes. Having a design 
+            like the 3rd project that fades would not work, this needed to be logged and it needed to be 
+            mapped according to the time as that is the only way it would be useful to compare. It needed 
+            to almost represent a graph as only then can the structures be checked. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 5: Drum Design Idea</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> As the same method of input was being used, the same drum made the last time was being used.</p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 6: Data visualization</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> In order to meet the functional requirements the idea was to indicate a line that would get 
+            logged as the the time kept moving. Once we figured that ‘Millis’ was the command that was moving the time, 
+            I initiated a variable named timeT that got the value from Millis and made that the 
+            moving X value of the line. The input taken from the board/sensor moved the Y value and the color was a 
+            gradient created by the amount of pressure. This enabled us to create a continuously growing and 
+            logging gradient structure for every metric I played on the drum pad. 
+        </p>
+      </div>
+
+      <video width="500" height="250" controls class=" w3-margin">
+        <source src="data/bw.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+      <video width="500" height="250" controls class=" w3-margin">
+        <source src="data/proj4.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 7: Final interaction</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> As the user pushes into the pad , the lines gets logged. The fill also moves from green to red representing how 
+            much pressure is applied. This enables one to get a sense of how visually each metric is different / 
+            similar from the other. </p>
+      </div>
+
+      <video width="250" height="450" controls class=" w3-margin">
+        <source src="data/v4.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 8: Repetition </h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> This was conducted across 1 Matra set called the Rudram and composition called 
+            jagadandKaaraka composed by Sait Thyyagaaraja. Each work is played, the final wave forms are then compared. (*In the references below)</p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 9: Implementation </h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h4> Composition Data visualization </h4>
+        <video width="250" height="450" controls class=" w3-margin">
+            <source src="data/Song.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+      </div>
+
+     
+
+      <img src="data/PancharataKriti.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+
+
+
+      <div class=" w3-margin w3-animate-right">
+        <h4> Chanting Data visualization </h4>
+        <video width="250" height="450" controls class=" w3-margin">
+            <source src="data/chant.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+      </div>
+
+      <img src="data/rudram.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+
+
+
+
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 10: Summary </h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> When both the representataions are compared it is very interestig to see that
+            the patterns and gradientations made for both the compositions are quite similar in nature. Both
+            show an alteration cycle as show below. 
+         </p>
+      </div>
+
+      <img src="data/T1.png"  class=" w3-padding w3-animate-right" alt="Alps">
+
+      <div class=" w3-margin w3-animate-right">
+        <p> When these are further expanded we can notice that there is a distinct similarity at nodes between
+            each transitions phrase of the beat. Though the redition of the notes are completely different, the sections
+            that are claimed to be similar are showing a form of similarity as show below.
+         </p>
+      </div>
+
+      <img src="data/T2.png"  class=" w3-padding w3-animate-right" alt="Alps">
+
+      <div class=" w3-margin w3-animate-right">
+        <p> This can further be abstracted to see that there seems to be a generic patter of the following that is 
+            running across both the compositions.
+         </p>
+      </div>
+
+      <img src="data/T3.png"  class=" w3-padding w3-animate-right" alt="Alps">
+
+      <div class=" w3-margin w3-animate-right">
+        <p> This test primarily supports the claim that the structures used in the Vedic Chat - Rudram and the 
+            the ones used on the Composition made my Saint Thygarja are similar in nature.
+         </p>
+      </div>
+
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>References </h2>
+      </div>
+      
+      <div class=" w3-margin w3-animate-right">
+        <a href="https://en.wikipedia.org/wiki/Shri_Rudram">Rudram</a> </br>
+        <a href="https://www.youtube.com/watch?v=zpDr1mBR-4o">Jagadananda Karaka</a></br>
+        <a href="https://en.wikipedia.org/wiki/Tyagaraja">Saint thyagaraja</a></br>
+        
+      
+      </div>
+
+</body>
+</html>

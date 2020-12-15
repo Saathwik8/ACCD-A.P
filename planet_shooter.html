@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Interactive Prototyping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    
+    <div class="w3-panel w3-pink w3-animate-top">
+        <a href="index.html"> <button class="btn success w3-margin-top w3-medium" >back</button></a>
+        <h1 class="w3-opacity">Project 2 - Planets Shooter</h1>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 1: Idea </h2>
+      </div>
+      
+      <div class=" w3-margin w3-animate-right">
+        <p>The project's primary purpose was to help us create a controller and understand 
+            what it takes to make systems that has analogue inputs and digital outputs using sensors.   </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 2: Design Idea</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> We were given the flexibility to create a whole new project however we were also recommended to try 
+            and expand the first project. The idea was to create a controlling systems that can help 
+            enhance the experience of the unit.</p>
+      </div>
+
+
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 3: Shifting Gears</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> The 1st project had just a simple interaction of an object moving. 
+            For the second project the idea was to make this into a game. 
+            The planet moves and a shooter fires at the planet.  </p>
+      </div>
+
+      <img src="data/ID2.png" class=" w3-padding w3-animate-right" alt="Alps">
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 4: Controller and Arduino Design</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> The first step of the project was to create the whole system interaction. 
+            I started out by creating simple designs of the controller and how someone should use it. 
+            What might be the form factor, how will the user use it, 
+            what kind of affordances must be there - multiple iterations were made in order to explore the form factor. 
+            In order to move the shooter, using a potentiometer seemed well as it had the same link of a physical movement. 
+            For the shooter, a trigger design seemed best as it would make it look like a shooting unit. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 5: Processing</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p>The next part of the assignment entailed converting the processing sketch 
+            from the previous planning project to the new one which can read the values from the Arduino Uno board.
+
+            The major code change was to make the the rectangle or the shooter movie based on 
+            the arc determined by the potentiometer and on click the star has to be shot. 
+            The code that represents that interaction is provided below. </p>
+
+            <video width="520" height="500" controls class=" w3-margin">
+                <source src="data/rotation1.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+
+
+
+        <p>
+        However, in the process of making the system we ran into issues with using 
+        the translation value of the potentiometer to fire the star. 
+        It became a very complicated set to use those arguments as 
+        its vectors and mapping those to objects was needed which I was not very aware of. 
+        This gave the opportunity to redesign the system. As conceptually I was able to understand how to do it, 
+        I then made the design such a way that it moves along the Y axis and shoots the Bullet. 
+        Once the system was placed it was a matter of creating the physical shell that will hold the adreno board. 
+        
+        Once the physical controller was made and once the processing sketch was working 
+        to a certain extent the last step was to define the aesthetics and make it look like a shooting game. 
+        The evolution of the project as shown below. 
+        I also created an alien shooter on Illustrator and used it as the shooter object.
+        </p>
+
+        <img src="data/ro2.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+
+        
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 6: Evolution </h2>
+      </div>
+
+      <img src="data/b1.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/c1.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/c2.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/c3.png"  widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/b2.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/M1.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/M2.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/M3.png"  widhth="250" height="400"class=" w3-padding w3-animate-right" alt="Alps">
+
+
+      <div class=" w3-margin w3-animate-right">
+        <p> The progress is shown below. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Final Video </h2>
+      </div>
+
+      <video width="1120" height="650" controls class=" w3-margin">
+        <source src="data/project2.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+
+
+</body>
+</html>

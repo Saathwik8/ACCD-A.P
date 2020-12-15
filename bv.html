@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Interactive Prototyping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    
+    <div class="w3-panel w3-pink w3-animate-top">
+        <a href="index.html"> <button class="btn success w3-margin-top w3-medium" >back</button></a>
+        <h1 class="w3-opacity">Project 3 - Beat Visulization</h1>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 1: Idea </h2>
+      </div>
+      
+      <div class=" w3-margin w3-animate-right">
+        <p>The 3rd project's primary purpose is to create a design that takes in values from the 
+            sensors and creates visualization to that data. It was designed to make us understand 
+            how to abstract data and create  methods to visualize different systems and their interactions in real time. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> After exploring a couple of ideas, my interest fell into the representation of the 
+            difference beat and tempo metrics that are used in the Indian classical music system. 
+            The Indian classical music runs on different metrics based on the composition and the context. 
+            This has mostly been taught through word of mouth and does not really have a visual to represent the system. 
+            The idea was to use a sensor to try and create a way of visually showing how the best moves for 
+            each of of the metric systems.</p>
+      </div>
+
+  
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 2: Interaction Diagram</h2>
+      </div>
+
+      <img src="data/ID3.png" class=" w3-padding w3-animate-right" alt="Alps">
+
+      
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 3: Arduino Setup</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> The purpose of the project was to also connect the board to the network so that 
+            we can learn how to connect our sensor and system to the internet. Which is why from the Arduino Uno system based 
+            on the recommedation of my professor i shifted to the Arduino MKR 1010. This had a wifi module to it. However there were a few problems. 
+            Arduino had a very secure system which was not allowing me to connect to the network. 
+            Though the connection was established the security protocols did not allow data transfer. 
+            This primarily led to a stop as the code was not enabling data to move. 
+            The solution that we then came to was to use a Jason file and host it onto just my network. 
+            This basically gets the concept of being able to derive the data and host it onto a network 
+            but by applying it through the Jason file method enables data to be transferred. It also had a few advatages, thought only accessible by me 
+        I was able to push in data at a vary high speed. Using the particle or the other systems would not give me such real time data log, and for my project
+    it became apt to have a very fast data transfer. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 4: Design Idea </h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> The general way of understanding a beat in my sense was to get to show something that grows. 
+            It's to show the repetition of the process. More than just a simple data log to show how,
+            the idea was to showcase the pressure of putting the beat along with a representation of how it moves the 
+            Y axis as a curve. </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 5: Drum design.</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> I started off by just placing a simple cardboard unit on the sensor by using a piece of duck tape to get 
+            them together. While experimenting it did give results but not the way it should ideally.
+             The impact are was not equally spread across the cardboard. This gave me wrong results. That was when 
+             I did some research on how pressure sensor pads actually work. The issue was that the pressure was 
+             being distributed and not channelled to the sensor. I then kept a coil and a sponge that puts the
+              pressure onto the sensor.  Now as one pushes into the board, it all falls on the sensor making it more accurate. 
+              The same learning that I got from the second project , to hold them together I use a rubber band as it 
+              hold the unit without changing the pressure distribution. </p>
+      </div>
+
+      <img src="data/D1.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/D2.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/D3.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/D4.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 6: Adjusting the scale values.</h2>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <p> As the curve being generated was moving outside the focus of the browser - the last step was to get a 
+            proper scale factor for the curve. The curve itself had a couple of points that determined how it moves. 
+            After figuring out what metrics enabled what parameters - it took a little tinkering to get the exact 
+            value of how the curve grows and falls with the background.
+        </p>
+      </div>
+
+      <img src="data/CR1.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/CR2.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/CR3.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+     
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Step 7: Final interaction</h2>
+      </div>
+
+      <img src="data/pj3.jpeg" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/pj31.jpeg" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+      <img src="data/CR4.png" widhth="250" height="400" class=" w3-padding w3-animate-right" alt="Alps">
+
+      <div class=" w3-margin w3-animate-right">
+        <p> As the user pushes into the pad , the curve grows and falls with a. Fading effect. 
+            The Background also moves from green to red representing how much pressure is applied. 
+            This enables one to get a sense of how visually each metric is different from the other.
+        </p>
+      </div>
+
+      <div class=" w3-margin w3-animate-right">
+        <h2>Final Video </h2>
+      </div>
+
+      <video width="1400" height="850" controls class=" w3-margin">
+        <source src="data/drumming.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+      <video width="1400" height="850" controls class=" w3-margin">
+        <source src="data/project3.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+     
+
+</body>
+</html>
